@@ -39,7 +39,7 @@ export const updateTodo = async(req,res)=>{
         return res.status(404).send(`The id ${id} is not valid`)
     }
 
-    const todo = {title, content, _id : id};
+    const todo = { _id : id,title, content,};
 
     await Todo.findByIdAndUpdate(id,todo,{new:true})
     res.json(todo);
