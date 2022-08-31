@@ -5,7 +5,8 @@ const todoSchema = new Schema({
         type: String,
         required: true
     },
-    content: String
+    content: String,
+    priority: Number
 }, { timestamps: true });
 const Todo = mongoose.model('Todo', todoSchema)
 export default Todo;
