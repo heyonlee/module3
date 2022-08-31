@@ -71,7 +71,7 @@ function App() {
       </nav>
 
       <div className="row">
-        <pre>{JSON.stringify(todo)}</pre>
+       
         <form className="col s12" onSubmit={onSubmitHandler}>
           <div className="row">
             <div className="input-field col s4 offset-s2">
